@@ -44,7 +44,7 @@ a {
 .logo {
     float: left;
     margin-top: 10px;
-    margin-left: 28px;
+    margin-left: 40px;
     font-size: 1.5em;
     height: 30px;
     letter-spacing: 1px;
@@ -53,11 +53,11 @@ a {
 
 #navbar ul {
     display: inline-block;
-    float: center;
+    float: right;
     list-style: none;
     text-align: left;
     margin-top: 4px;
-
+    margin-right: 20px;
 }
 @media(max-width: 640px) {
     #navbar ul {
