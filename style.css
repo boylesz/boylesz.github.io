@@ -274,7 +274,6 @@ div {
 
 .subtitle::first-letter {
     font-size: 50px;
-    color: #fbcb3e;
 }
 
 .paragraph {
@@ -343,4 +342,84 @@ div {
     padding: 5%;
     transition: color 0.5s ease, padding 0.5s ease;
     -webkit-transition: color 0.5s ease, padding 0.5s ease;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    margin: 20px 40px;
+    color: #f0f6fd;
+}
+
+.contact-left {
+    flex-basis: 40%;
+}
+
+.social-icons {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 5%;
+    color: #f0f6fd;
+    display: inline-block;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+.social-icons a:hover {
+    color: #3CA345;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #202224;
+    padding: 3%;
+    margin: 3%;
+    color: #f0f6fd;
+    font-size: 18px;
+    border-radius: 5px;
+    resize: none;
+}
+
+form .btn {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #fbcb3e;
+    color: #353535;
+    font-weight: 500;
+    padding: 3% 5%;
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s;
+}
+
+/* ===== Coyright Section ===== */
+.copyright {
+    font-size: small;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    background-color: #8bb2d6;
+    color: #353535;
+    margin-top: 5%;
 }
