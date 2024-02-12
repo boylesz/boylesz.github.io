@@ -307,14 +307,21 @@ div {
     grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
     grid-gap: 4%;
 }
+@media only screen and (max-width: 680px) {
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(25%, 100%));
+        grid-gap: 1.5%;
+    }
+}
 
 .work-list div {
     cursor: pointer;
-    background-color: #445d84;
+    background-color: #8bb2d6;
     background-size: cover;
     background-position: center;
     padding-top: 0px;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
+    height: 300px;
     border-radius: 7px;
 }
 
@@ -327,4 +334,13 @@ div {
     background-color: #202224;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    transition: color 0.5s ease, padding 0.5s ease;
+    -webkit-transition: color 0.5s ease, padding 0.5s ease;
+}
+
+.work-list div:hover h3 {
+    color: #fbcb3e;
+    padding: 5%;
+    transition: color 0.5s ease, padding 0.5s ease;
+    -webkit-transition: color 0.5s ease, padding 0.5s ease;
 }

@@ -18,6 +18,7 @@ menuIcon.addEventListener('click', () => {
 navMenu.addEventListener('click', () => {
     nav.style.transform = 'translateX(-100%)';
     nav.style.transition = 'transform 0.2s ease-out';
+    toggleMenuIcon();
 });
 
 // Toggle Menu Icon ========================================
