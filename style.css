@@ -8,6 +8,7 @@
 body {
     background: #202224;
     font-family: 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
 }
 
 a {
@@ -415,6 +416,7 @@ form .btn {
 
 /* ===== Coyright Section ===== */
 .copyright {
+    bottom: 0;
     font-size: small;
     width: 100%;
     text-align: center;
@@ -422,4 +424,30 @@ form .btn {
     background-color: #8bb2d6;
     color: #353535;
     margin-top: 5%;
+}
+
+/* ===== Under Construction ===== */
+.construction {
+    margin: 40px 40px 20px;
+    color: #f0f6fd;
+}
+
+.construction-text {
+    padding: 100px 50px;
+    
+    background-color: #8bb2d6;
+    color: #353535;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.construction-text p::first-letter {
+    font-size: 60px;
+}
+
+.construction-text .fa-solid {
+    font-size: 100px;
 }
