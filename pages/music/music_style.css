@@ -1,0 +1,35 @@
+.performances {
+    margin: 20px 40px;
+    color: #f0f6fd;
+}
+
+.video-with-description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-with-description h2 {
+    font-size: 23px;
+    color: #8bb2d6;
+}
+
+.description {
+    margin-top: 30px;
+    flex-basis: 40%;
+    font-size: 18px;
+}
+
+.video {
+    flex-basis: 55%;
+}
+
+.video iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+

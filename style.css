@@ -301,7 +301,7 @@ div {
     color: #f0f6fd;
 }
 
-.work-list {
+.horizontal-list {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
@@ -314,7 +314,7 @@ div {
     }
 }
 
-.work-list div {
+.horizontal-list div {
     cursor: pointer;
     background-color: #8bb2d6;
     background-size: cover;
@@ -325,7 +325,7 @@ div {
     border-radius: 7px;
 }
 
-.work-list h3 {
+.horizontal-list h3 {
     color: #f0f6fd;
     font-size: 150%;
     text-align: center;
@@ -338,7 +338,7 @@ div {
     -webkit-transition: color 0.5s ease, padding 0.5s ease;
 }
 
-.work-list div:hover h3 {
+.horizontal-list div:hover h3 {
     color: #fbcb3e;
     padding: 5%;
     transition: color 0.5s ease, padding 0.5s ease;
