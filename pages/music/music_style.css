@@ -33,3 +33,32 @@
     border-radius: 10px;
 }
 
+table {
+    width: 100%;
+    min-width: 450px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #8bb2d6;
+}
+
+tbody tr:last-child td {
+    padding: 8px;
+    border-bottom: none;
+}
+
+thead {
+    text-align: left;
+    font-size: 18px;
+    color: #fbcb3e;
+}
+
+tbody tr:hover {
+    background-color: #454545;
+}
+
+table i:hover {
+    color: #3CA345;
+}

@@ -255,6 +255,11 @@ div {
 }
 
 /* ===== General Styles ===== */
+.content-box {
+    margin: 20px 40px;
+    min-width: fit-content;
+}
+
 .container {
     margin: auto;
     width: 90%;
