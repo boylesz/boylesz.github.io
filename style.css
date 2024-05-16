@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #fbcb3e;
     font-family: inherit;
     font-size: inherit;
     text-decoration: none;
@@ -309,13 +309,14 @@ div {
 .horizontal-list {
     margin-top: 10px;
     display: grid;
+    
     grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
     grid-gap: 4%;
 }
 @media only screen and (max-width: 680px) {
-    .work-list {
-        grid-template-columns: repeat(auto-fit, minmax(25%, 100%));
-        grid-gap: 1.5%;
+    .horizontal-list {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
     }
 }
 
@@ -388,6 +389,13 @@ div {
 
 .contact-right form {
     width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    .contact-right {
+        text-align: left;
+        flex-basis: 100%;
+    }
 }
 
 /* form input, form textarea {
