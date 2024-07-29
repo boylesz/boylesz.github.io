@@ -1,6 +1,7 @@
 .other {
     margin: 20px 40px;
     color: #f0f6fd;
+    flex: 1 0 auto;
 }
 
 .other .container {
