@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Till Drawer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+
+        .till-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #e8e8e8;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .table-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: #f8f8f8;
+            padding: 15px 20px;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            align-items: center;
+        }
+
+        .row:hover {
+            background: #fafafa;
+        }
+
+        .denomination {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .drawer-count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .count-input {
+            width: 60px;
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+            background: white;
+        }
+
+        .count-input:focus {
+            outline: none;
+            border-color: #007AFF;
+            box-shadow: 0 0 0 2px rgba(0,122,255,0.2);
+        }
+
+        .multiply {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .equals {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .cash-value {
+            text-align: right;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .total-row {
+            background: #f8f8f8;
+            padding: 20px;
+            border-top: 2px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .total-amount {
+            color: #333;
+        }
+
+       
+
+        @media (max-width: 600px) {
+            .till-container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .row, .table-header {
+                grid-template-columns: 1fr auto 1fr;
+                gap: 10px;
+            }
+            
+            .count-input {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="till-container">
+        <div class="header">
+            <div class="title">Till Drawer</div>
+        </div>
+
+        <div class="table-header">
+            <div>Denomination</div>
+            <div style="text-align: center;">Drawer Count</div>
+            <div style="text-align: right;">Cash Value</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$100.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="100">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-100">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$50.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="50">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-50">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$20.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="20">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-20">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$10.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="10">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-10">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$5.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="5">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-5">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$2.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="2">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-2">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$1.00</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="1">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-1">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$0.50</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="0.5">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-0.5">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$0.20</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="0.2">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-0.2">$0.00</div>
+        </div>
+
+        <div class="row">
+            <div class="denomination">$0.10</div>
+            <div class="drawer-count">
+                <span class="multiply">×</span>
+                <input type="number" class="count-input" value="0" min="0" data-denomination="0.1">
+                <span class="equals">=</span>
+            </div>
+            <div class="cash-value" id="value-0.1">$0.00</div>
+        </div>
+
+        <div class="total-row">
+            <div>Total Cash in Drawer</div>
+            <div class="total-amount" id="total-amount">$0.00</div>
+        </div>
+    </div>
+
+    <script>
+        function formatCurrency(amount) {
+            return '$' + amount.toFixed(2);
+        }
+
+        function formatCurrencyWithCommas(amount) {
+            return '$' + amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        }
+
+        function updateValue(denomination, count) {
+            const value = denomination * count;
+            const valueElement = document.getElementById(`value-${denomination}`);
+            valueElement.textContent = formatCurrency(value);
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let total = 0;
+            const inputs = document.querySelectorAll('.count-input');
+            
+            inputs.forEach(input => {
+                const denomination = parseFloat(input.dataset.denomination);
+                const count = parseInt(input.value) || 0;
+                total += denomination * count;
+            });
+            
+            document.getElementById('total-amount').textContent = formatCurrencyWithCommas(total);
+        }
+
+        // Add event listeners to all input fields
+        document.querySelectorAll('.count-input').forEach(input => {
+            input.addEventListener('input', function() {
+                const denomination = parseFloat(this.dataset.denomination);
+                const count = parseInt(this.value) || 0;
+                updateValue(denomination, count);
+            });
+
+            // Handle focus events for better UX
+            input.addEventListener('focus', function() {
+                this.select();
+            });
+        });
+
+        // Button event handlers
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to close the till drawer?')) {
+                console.log('Till drawer closed');
+            }
+        });
+
+        document.querySelector('.next-btn').addEventListener('click', function() {
+            console.log('Moving to next step');
+        });
+
+        document.querySelector('.help-btn').addEventListener('click', function() {
+            alert('Till Drawer Help:\n\n• Enter the count of each denomination in your drawer\n• Values will calculate automatically\n• Use Tab to move between fields quickly\n• Total is shown at the bottom');
+        });
+
+        // Initialize the display
+        updateTotal();
+    </script>
+</body>
+</html>
