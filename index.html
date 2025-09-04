@@ -1,137 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Zavier Boyles</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- ===== Header Bar Section ===== -->
-        <div class="header">
-            <nav id="navbar" class="">
-                <div class="nav-wrapper">
-                    <!-- Navbar Logo -->
-                    <div class="logo">
-                        <a href="/index.html#home">
-                            <img width="auto" height="40px" src="/resources/logo2.png">
-                            <span class="logo-title">Zavier Boyles</span>
-                        </a>
-                    </div>
-                
-                    <!-- Navbar Links -->
-                    <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-              
-              
-              <!-- Menu Icon -->
-            <div class="menuIcon">
-                <span class="icon icon-bars"></span>
+<html lang="en" class="main-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavier Boyles</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e56f55113.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="resources/logo.png" alt="logo" height="40">
+                    <span class="logo-title">Zavier Boyles</span>
+                </a>
             </div>
-            
-            <div class="overlay-menu">
-                <ul id="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+            <ul>
+                <li><a href="#" class="nav-link" data-target="about">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#" class="nav-link" data-target="work">Work</a></li>
+                <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+            <a class="menu-icon"><i class="fa fa-bars"></i></a>
+            <ul class="overlay-menu">
+                <li><a href="#" class="nav-link" data-target="about">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#" class="nav-link" data-target="work">Work</a></li>
+                <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- ===== About Section ===== -->
-        <div class="about">
-            <div class="container">
-                <div class="row">
-                    <h2 class="subtitle">About</h2>
-                    <p class="paragraph">
-                        I'm a game developer, sonic artist, and folk musicican based in Wellington, New Zealand.
-                        <br>
-                        <br>
-                        I love creating audio-visual soundscapes, interactive media, and innovating on Celtic music traditions. I enjoy collaborating with other artists and designers to create fun, new games, and unique experiences.
-                        <br>
-                        <br>
-                        Have a look at my work below to see some of the things I've made, as well as some projects I'm working on.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== Work Section ===== -->
-        <div class="work">
-            <div class="container">
-                <h2 class="subtitle">Work</h2>
-                <div class="horizontal-list">
-                    <div onclick="location.href='pages/games/games.html';" style="background-image: url(/resources/games/bananananza.png);">
-                        <h3>Games</h3>
-                    </div>
-                    <div onclick="location.href='pages/music/music.html';" style="background-image: url(/resources/music/A_Hero\'s_Crossing_img.png);">
-                        <h3>Music</h3>
-                    </div>
-                    <div onclick="location.href='pages/other/other.html';" style="background-image: url(/resources/other/bezier_helper.png);">
-                        <h3>Other</h3>
-                    </div>
-                    <div onclick="location.href='pages/wip/wip.html';" style="background-image: null;">
-                        <h3>WIP</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== Contact Section ===== -->
-        <script src="https://kit.fontawesome.com/3e56f55113.js" crossorigin="anonymous"></script>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm a game developer, sonic artist, and folk musician based in Wellington, New Zealand. I love creating audio-visual soundscapes, interactive media, and innovating on Celtic music traditions. I enjoy collaborating with other artists and designers to create fun, new games, and unique experiences.</p>
+            <p>Have a look at my work below to see some of the things I've made, as well as some projects I'm working on.</p>
+        </section>
         
-        <div class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h3 class="subtitle">Contact</h3>
-                    </div>
-                    <div class="contact-right">
-                        <!-- <form action>
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="email" name="email" placeholder="email@address.com">
-                            <textarea name="message" rows="6" placeholder="Message"></textarea>
-                            <button type="submit" class="btn">Submit</button>
-                        </form> -->
-                        <div class="social-icons">
-                            <a href="https://zavierb.itch.io">
-                                <i class="fa-brands fa-itch-io" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://instagram.com/zavier_boyles">
-                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://github.com/boylesz">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/zavier-b-56b60111a/">
-                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
+        <section id="work">
+            <h2>Work</h2>
+            <div class="work-grid">
+                <a class="grid-child" href="games.html" style="background-image: url(resources/games/bananananza.png);">
+                    <h3>Games</h3>
+                </a>
+                <a class="grid-child" href="music.html" style="background-image: url(resources/music/A_Hero\'s_Crossing_img.png);">
+                    <h3>Music</h3>
+                </a>
+                <!-- <a class="grid-child" href="other.html" style="background: #202224;">
+                    <h3>Other</h3>
+                </a>
+                <a class="grid-child" href="" style="background: #202224;">
+                    <h3>Other</h3>
+                </a> -->
             </div>
-        </div>
+        </section>
 
-        <!-- ===== Copyright ===== -->
-        <div class="copyright">
-            <p>
-                Copyright <i class="fa-regular fa-copyright" aria-hidden="true"></i> Zavier Boyles 2024
-            </p>
-            <br>
-            <p>
-                Website created by me and hosted by Github Pages
-            </p>
-        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="social-icons">
+                <a href="https://zavierb.itch.io">
+                    <i class="fa-brands fa-itch-io" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/zavier_boyles">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/boylesz">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zavier-b-56b60111a/">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </main>
 
-        <!-- ===== Scripts ===== -->
-        <script src="script.js"></script>
-    </body>
+    <footer>
+        <p>Copyright <i class="fa-regular fa-copyright" aria-hidden="true"></i> Zavier Boyles 2025</p>
+        <p>Website created by me and hosted by Github Pages</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                const offset = 80; // Adjust this value for extra pixels
+                
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+                    window.scrollTo({
+                        top: elementPosition - offset - vw * 0.035,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="/scripts/dropdown_menu.js"></script>
+</body>
 </html>

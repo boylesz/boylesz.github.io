@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavier Boyles | Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e56f55113.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="resources/logo.png" alt="logo" height="40">
+                    <span class="logo-title">Zavier Boyles</span>
+                </a>
+            </div>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Music</h2>
+            <div class="grid" data-columns="2">
+                <a class="grid-child" href="music/performances.html" style="background-image: url(resources/music/Joan_Prior_Gig.png);">
+                    <h3>Performances</h3>
+                </a>
+                <a class="grid-child" href="music/sheet-music.html" style="background-image: url(resources/music/A_Hero\'s_Crossing_img.png);">
+                    <h3>Sheet Music</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright <i class="fa-regular fa-copyright" aria-hidden="true"></i> Zavier Boyles 2025</p>
+        <p>Website created by me and hosted by Github Pages</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const grid = document.querySelector(".grid");
+            const columns = grid.getAttribute("data-columns") || 3; // Default to 3 columns if not set
+            grid.style.maxWidth = `${columns * 550 + (columns-1) * 25}px`;
+        });
+    </script>
+</body>
+</html>

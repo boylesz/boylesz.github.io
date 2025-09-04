@@ -1,0 +1,33 @@
+.video-with-description {
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 1fr; 
+    gap: 0px 15px; 
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.video-with-description h3 {
+    font-size: 1.3rem;
+    color: #8bb2d6;
+    padding-bottom: 1rem;
+}
+
+.video-with-description iframe {
+    width: 100%;
+}
+
+@media (min-width: 1300px) {
+
+}
+
+@media (max-width: 800px) {
+    .video-with-description {
+        grid-template-columns: 1fr;
+    }
+
+    .video-with-description span {
+        margin-bottom: 15px;
+    }
+}
