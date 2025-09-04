@@ -86,6 +86,12 @@
             box-shadow: 0 0 0 2px rgba(0,122,255,0.2);
         }
 
+        .count-input:invalid {
+            border-color: rgb(190, 10, 10);
+            box-shadow: 0 0 0 2px rgba(190, 10, 10, 0.2);
+            background: rgb(190, 10, 10, 0.1);
+        }
+
         .multiply {
             color: #666;
             font-size: 16px;
@@ -152,7 +158,7 @@
             <div class="denomination">$100.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="100">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="100">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-100">$0.00</div>
@@ -162,7 +168,7 @@
             <div class="denomination">$50.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="50">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="50">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-50">$0.00</div>
@@ -172,7 +178,7 @@
             <div class="denomination">$20.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="20">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="20">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-20">$0.00</div>
@@ -182,7 +188,7 @@
             <div class="denomination">$10.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="10">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="10">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-10">$0.00</div>
@@ -192,7 +198,7 @@
             <div class="denomination">$5.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="5">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="5">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-5">$0.00</div>
@@ -202,7 +208,7 @@
             <div class="denomination">$2.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="2">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="2">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-2">$0.00</div>
@@ -212,7 +218,7 @@
             <div class="denomination">$1.00</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="1">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="1">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-1">$0.00</div>
@@ -222,7 +228,7 @@
             <div class="denomination">$0.50</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="0.5">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="0.5">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-0.5">$0.00</div>
@@ -232,7 +238,7 @@
             <div class="denomination">$0.20</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="0.2">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="0.2">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-0.2">$0.00</div>
@@ -242,7 +248,7 @@
             <div class="denomination">$0.10</div>
             <div class="drawer-count">
                 <span class="multiply">×</span>
-                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" data-denomination="0.1">
+                <input type="number" class="count-input" pattern="^[1-9]+$" inputmode="numeric" step="1" value="0" min="0" required data-denomination="0.1">
                 <span class="equals">=</span>
             </div>
             <div class="cash-value" id="value-0.1">$0.00</div>
