@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Bananananza",
+        "link": "https://slyseville.itch.io/bananananza",
+        "image": "bananananza.png",
+        "description": "Dungeon-crawler made in 48 hours for the Global Game Jam 2024"
+    },
+    {
+        "name": "Spark",
+        "link": "https://slyseville.itch.io/spark",
+        "image": "spark.png",
+        "description": "Dungeon-crawler, hack'n'slash made for the New Year, New Skills Game Jam"
+    },
+    {
+        "name": "Burst",
+        "link": "https://zavierb.itch.io/burst",
+        "image": "burst.png",
+        "description": "Asteroids with a twist. Made for the Processing Jam #2",
+        "tags": [
+            { "text": "Update Planned", "color": "crimson" }
+        ]
+    },
+    {
+        "name": "Just Wait!",
+        "link": "https://slyseville.itch.io/just-wait",
+        "image": "just_wait.png",
+        "description": "Strategic memory game made for Ludum Dare 53"
+    }
+]
